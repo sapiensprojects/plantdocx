@@ -13,7 +13,7 @@ export function createPlantDocx(data) {
                 new docx.TableCell({
                     children : [
                         new docx.Paragraph({
-                            text : data.rows[row][0],
+                            text : data.rows[row][0].toUpperCase(),
                             style: "boldPara_inPC",
                         })
                     ]
