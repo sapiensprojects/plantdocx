@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dependency scripts -->
+    <script src="https://unpkg.com/docx@7.1.0/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <!-- ------------------ -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>PlantDocx</title>
+</head>
+<body>
+    <header><p>Sapiens Tools > <span>PlantDocx</span></p></header>
+    <section id="plant-name">
+        <label for="plant-name-inp">Plant Name <span>(Heading)</span></label>
+        <input id="plant-name-inp" type="text" placeholder="PlantName">
+    </section>
+    <section id="rows">
+        <div class="input-rows"></div>
+        <button class="btn">add row</button>
+    </section>
+    <section id="plant-images">
+        <div class="files">
+            
+        </div>
+        <button class="btn">add image</button>
+    </section>
+    <section id="create-docx">
+        <button class="btn">create</button>
+    </section>
+    <section id="filename">
+        <label for="filename-inp">Filename</label>
+        <div>
+            <input type="text" id="filename-inp" value="plant">
+            <p>.docx</p>
+        </div>
+    </section>
+    <footer>&copy; Dhiraj Kumar Gupta</footer>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>
