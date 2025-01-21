@@ -2,5 +2,5 @@ export default {
     lineHeight: 1.5,
     fontSize: 14,
     headerHeightInPx: 300,
-    tableWidth: 5000,
+    tableWidthInPercent: 90
 }

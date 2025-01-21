@@ -31,8 +31,8 @@ export function createPlantDocx(data) {
     let docxTable = new docx.Table({
         rows: docxTableRows,
         width:{
-            size: configs.tableWidth,
-            type: docx.WidthType.DXA
+            size: configs.tableWidthInPercent,
+            type: docx.WidthType.PERCENTAGE
         }
     });
 
