@@ -10,7 +10,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             bold: false,
         },
         paragraph: {
@@ -27,7 +27,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             bold: true,
         },
         paragraph: {
@@ -45,7 +45,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             italics: true,
         },
         paragraph: {
@@ -63,7 +63,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             italics: true,
             bold: true
         },
@@ -83,7 +83,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             bold: false,
             color: primaryColorHexValue,
         },
@@ -101,7 +101,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             bold: true,
             color: primaryColorHexValue,
         },
@@ -120,7 +120,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             italics: true,
             color: primaryColorHexValue,
         },
@@ -139,7 +139,7 @@ export default [
         quickFormat: true,
         run: {
             font: "Calibri",
-            size: 14,
+            size: 30,
             italics: true,
             bold: true,
             color: primaryColorHexValue,
