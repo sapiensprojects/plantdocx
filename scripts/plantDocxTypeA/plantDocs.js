@@ -29,7 +29,11 @@ export function createPlantDocx(data) {
 
     // Creating docx table
     let docxTable = new docx.Table({
-        rows: docxTableRows
+        rows: docxTableRows,
+        width:{
+            size: configs.tableWidth,
+            type: docx.WidthType.DXA
+        }
     });
 
     // Creating docx
@@ -42,9 +46,9 @@ export function createPlantDocx(data) {
     });
 
     docx.Packer.toBlob(docxPage).then(blob => {
-        console.log(blob);
+        // console.log(blob);
         saveAs(blob, data.filename);
-        console.log("Document created successfully");
+        // console.log("Document created successfully");
     });
 
 }
