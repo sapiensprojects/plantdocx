@@ -1,4 +1,6 @@
+import { cmToDxa } from "./utilities.js";
 import configs from "./configs.js";
+import paragraphStyles from "./paragraphStyles.js";
 
 // data = {heading, rows[], images[], filename}
 export function createPlantDocx(data) {
@@ -11,14 +13,16 @@ export function createPlantDocx(data) {
                 new docx.TableCell({
                     children : [
                         new docx.Paragraph({
-                            text : data.rows[row][0]
+                            text : data.rows[row][0],
+                            style: "boldPara_inPC",
                         })
                     ]
                 }),
                 new docx.TableCell({
                     children : [
                         new docx.Paragraph({
-                            text : data.rows[row][1]
+                            text : data.rows[row][1],
+                            style: "normalPara",
                         })
                     ]
                 })
@@ -31,16 +35,29 @@ export function createPlantDocx(data) {
     let docxTable = new docx.Table({
         rows: docxTableRows,
         width:{
-            size: configs.tableWidthInPercent,
+            size: configs.tableWidthInPercentage,
             type: docx.WidthType.PERCENTAGE
         }
     });
 
     // Creating docx
     let docxPage = new docx.Document({
-        sections : [
-            {
-                children:[docxTable]
+        styles: {
+            paragraphStyles: paragraphStyles
+        },
+        sections: [
+            {   
+                properties:{
+                    page:{
+                        margins: {
+                            top: cmToDxa(configs.pageMarginInCm),
+                            bottom: cmToDxa(configs.pageMarginInCm),
+                            left: cmToDxa(configs.pageMarginInCm),
+                            right: cmToDxa(configs.pageMarginInCm)
+                        },
+                    },
+                },
+                children:[docxTable],
             }
         ]
     });
