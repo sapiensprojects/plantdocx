@@ -49,7 +49,7 @@ export function createPlantDocx(data) {
             {   
                 properties:{
                     page:{
-                        margins: {
+                        margin: {
                             top: cmToDxa(configs.pageMarginInCm),
                             bottom: cmToDxa(configs.pageMarginInCm),
                             left: cmToDxa(configs.pageMarginInCm),
