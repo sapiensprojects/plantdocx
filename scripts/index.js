@@ -33,6 +33,7 @@ function appendInputRow(parentElmt){
         <textarea rows="1" class="row-field-value" placeholder="Field Value"></textarea>
     `;
     inputRowDiv.querySelector(".row-field-name").addEventListener("keypress", (event) => {  
+        document.querySelector("body").style.backgroundColor = "#777";
         elmts.plantNameInp.value = event.key;
         if (event.key === "Enter"){
             event.target.rows += 1;
