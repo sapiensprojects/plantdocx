@@ -5,6 +5,13 @@ import paragraphStyles from "./paragraphStyles.js";
 // data = {heading, rows[], images[], filename}
 export function createPlantDocx(data) {
 
+    // Handling 0(zero) noOfRows
+    if (data.rows.length === 0){
+      let newDocx = createEmptyDocx();
+      saveDocx(newDocx, data.filename);
+      return;
+    }
+
     // Creating docx rows
     let docxTableRows = []
     for (let row in data.rows){
@@ -30,7 +37,7 @@ export function createPlantDocx(data) {
         });
         docxTableRows.push(docxTableRow);
     }
-
+    
     // Creating docx table
     let docxTable = new docx.Table({
         rows: docxTableRows,
@@ -62,10 +69,28 @@ export function createPlantDocx(data) {
         ]
     });
 
-    docx.Packer.toBlob(docxPage).then(blob => {
-        // console.log(blob);
-        saveAs(blob, data.filename);
-        // console.log("Document created successfully");
-    });
+    saveDocx(docxPage, data.filename);
 
+}
+
+
+function saveDocx(newDocx, filename){
+    docx.Packer.toBlob(newDocx).then(blob => {
+        saveAs(blob, filename);
+    });
+}
+
+function createEmptyDocx(){
+    let newDocx = new docx.Document({
+        sections:[
+            {
+                children:[
+                    new docx.Paragraph({
+                        text: ""
+                    })
+                ]
+            }
+        ]
+    });
+    return newDocx;
 }

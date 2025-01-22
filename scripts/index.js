@@ -31,7 +31,18 @@ function appendInputRow(parentElmt){
     inputRowDiv.innerHTML = `
         <textarea rows="1" class="row-field-name" placeholder="Field Name"></textarea>
         <textarea rows="1" class="row-field-value" placeholder="Field Value"></textarea>
-    `
+    `;
+    inputRowDiv.querySelector(".row-field-name").addEventListener("keypress", (event) => {
+        if (event.key === "Enter"){
+            event.target.rows += 1;
+        }
+    });
+
+    inputRowDiv.querySelector(".row-field-value").addEventListener("keypress", (event) => {
+        if (event.key === "Enter"){
+            event.target.rows += 1;
+        }
+    });
     parentElmt.appendChild(inputRowDiv);
 }
 
@@ -93,7 +104,8 @@ function createDocxHndl(){
 
 
 
-
+console.log(elmts.rowFieldName);
+console.log(elmts.rowFieldValue);
 elmts.addImageBtn.onclick = addImageHndl;
 elmts.addRowBtn.onclick = addRowHndl;
 elmts.createBtn.onclick = createDocxHndl;

@@ -15,7 +15,7 @@ export default [
         },
         paragraph: {
             // alignment: AlignmentType.JUSTIFIED,
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
         },
     },
 
@@ -31,7 +31,7 @@ export default [
             bold: true,
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
@@ -49,7 +49,7 @@ export default [
             italics: true,
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
@@ -68,7 +68,7 @@ export default [
             bold: true
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
@@ -89,7 +89,7 @@ export default [
         },
         paragraph: {
             // alignment: AlignmentType.JUSTIFIED,
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
         },
     },
 
@@ -107,7 +107,7 @@ export default [
         },
         paragraph: {
             // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
-            spacing: { line: 276, left: 20 * 72 * 0.1, right: 20 * 72 * 0.05 },
+            // spacing: { line: 276, left: 20 * 72 * 0.1, right: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
@@ -126,7 +126,7 @@ export default [
             color: primaryColorHexValue,
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
@@ -146,7 +146,7 @@ export default [
             color: primaryColorHexValue,
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
