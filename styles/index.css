@@ -94,6 +94,7 @@ section {
 
 #header .monospace-para{
     font-family: monospace;
+    font-size:clamp(1.3rem, 2.2vh, 2rem);
 }
 
 /* PLANT-NAME */
@@ -129,6 +130,7 @@ section {
 
 #rows .input-rows{
     background-color: rgb(250, 229, 202);
+    /* background-color: #555; */
     margin: 0.5rem 0;
     padding: 0.5rem;
 }
@@ -140,6 +142,7 @@ section {
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 10px;
+    /* background-color: #ddd; */
     background-color: rgb(249, 242, 232);
 }
 
