@@ -104,8 +104,7 @@ function createDocxHndl(){
 
 
 
-console.log(elmts.rowFieldName);
-console.log(elmts.rowFieldValue);
+
 elmts.addImageBtn.onclick = addImageHndl;
 elmts.addRowBtn.onclick = addRowHndl;
 elmts.createBtn.onclick = createDocxHndl;
