@@ -106,7 +106,8 @@ export default [
             color: primaryColorHexValue,
         },
         paragraph: {
-            spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            // spacing: { line: 276, before: 20 * 72 * 0.1, after: 20 * 72 * 0.05 },
+            spacing: { line: 276, left: 20 * 72 * 0.1, right: 20 * 72 * 0.05 },
             // rightTabStop: TabStopPosition.MAX,
             // leftTabStop: 453.543307087,
         },
