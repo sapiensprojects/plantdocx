@@ -33,15 +33,19 @@ function appendInputRow(parentElmt){
         <textarea rows="1" class="row-field-value" placeholder="Field Value"></textarea>
     `;
     inputRowDiv.querySelector(".row-field-name").addEventListener("keypress", (event) => {
-        if (event.key === "Enter"){
-            event.target.rows += 1;
-        }
+        // if (event.key === "Enter"){
+        //     event.target.rows += 1;
+        // }
+        event.target.style.height = "auto";
+        event.target.style.height = event.target.scrollHeight + "px";
     });
 
     inputRowDiv.querySelector(".row-field-value").addEventListener("keypress", (event) => {
-        if (event.key === "Enter"){
-            event.target.rows += 1;
-        }
+        // if (event.key === "Enter"){
+        //     event.target.rows += 1;
+        // }
+        event.target.style.height = "auto";
+        event.target.style.height = event.target.scrollHeight + "px";
     });
     parentElmt.appendChild(inputRowDiv);
 }
